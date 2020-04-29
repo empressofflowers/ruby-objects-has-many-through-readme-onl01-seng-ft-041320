@@ -16,4 +16,7 @@ class Waiter
     Meal.new(cutomer, total, tip)
   end
 
+  def best_tipper
+    
+  end
 end
