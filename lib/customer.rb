@@ -20,4 +20,8 @@ class Customer
   def meals
     self.meals
   end
+
+  def waiters
+    self.waiter
+  end
 end
