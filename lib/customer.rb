@@ -22,7 +22,9 @@ class Customer
   end
 
   def waiters
-    Meal.all.select { |waiter| waiter.customer == self }
+  meals.map do |meal|
+    meal.waiter
+    end
   end
 
   def new_meal_20_percent(waiter, total)
