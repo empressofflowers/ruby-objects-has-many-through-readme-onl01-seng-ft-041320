@@ -18,7 +18,7 @@ class Customer
   end
 
   def meals
-    Meal.all.select |meal| customer.meals == self
+    Meal.all.select { |meal| customer.meals == self }
   end
 
   def waiters
